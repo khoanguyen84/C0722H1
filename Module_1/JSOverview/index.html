@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Overview</title>
+</head>
+<body>
+    <!-- 
+        cách 1: inline -> thông qua event (sự kiện)
+        cách 2: internal -> viết bên trong thẻ script (thẻ script có thể đặt bất cứ đâu trong HTML, nhưng nên đặt ở cuối)
+        cách 3: external -> tách mã js ra thành 1 file có phần mở rộng là .js, sau đó embed vào file html thông qua thuộc tính src của thẻ script
+     -->
+     <!-- <button onmouseover="document.getElementsByTagName('button')[0].innerText = 'Anh Dũng'">Hover me to show datetime</button> -->
+     <button 
+        onmouseover="this.innerText = new Date()"
+        onmouseout="this.innerText = 'Hover me to show datetime'"
+        >
+        Hover me to show datetime</button>
+
+    <p onmouseover="this.innerText = new Date()"
+        onmouseout="this.innerText = 'Hover me to show datetime'"
+    >
+        Hover me to show datetime
+    </p>
+
+    <input type="password" id="pw">
+    <!-- <button
+        onclick="document.getElementById('pw').type = 'text'; "
+    >Show password</button> -->
+    <button class="btn" onclick="showPassword()">Show password</button>
+
+    <!-- <script>
+        function showPassword(){
+            if(document.getElementById('pw').type == 'password'){
+                document.getElementById('pw').type = 'text';
+                document.getElementsByClassName('btn')[0].innerText = 'Hide password';
+            }
+            else{
+                document.getElementById('pw').type = 'password';
+                document.getElementsByClassName('btn')[0].innerText = 'Show password';
+            }
+        }
+
+    </script> -->
+    <script src="site.js"></script>
+</body>
+</html>

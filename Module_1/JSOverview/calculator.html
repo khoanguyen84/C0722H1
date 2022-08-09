@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <table border="1">
+        <tbody>
+            <tr>
+                <td>Số A</td>
+                <td>
+                    <input type="number" id="numberA">
+                </td>
+            </tr>
+            <tr>
+                <td>Số B</td>
+                <td>
+                    <input type="number" id="numberB">
+                </td>
+            </tr>
+            <tr>
+                <td>Kết quả</td>
+                <td>
+                    <input type="number" id="result">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button onclick="additional()">Additional</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function additional(){
+            let numberA = parseInt(document.getElementById('numberA').value);
+            let numberB = parseInt(document.getElementById('numberB').value);
+            let result = numberA + numberB;
+            document.getElementById('result').value = result;
+        }
+    </script>
+</body>
+</html>
