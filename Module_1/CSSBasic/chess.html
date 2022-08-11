@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+    <style>
+        table,tr,td{
+            border: 1px solid orange;
+            border-collapse: collapse;
+        }
+        td{
+            padding: 25px;
+        }
+        table>tbody>tr:nth-child(odd)>td:nth-child(odd){
+            background-color: orange;
+        }
+        table>tbody>tr:nth-child(odd)>td:nth-child(even){
+            background-color: black;
+        }
+        table>tbody>tr:nth-child(even)>td:nth-child(even){
+            background-color: orange;
+        }
+        table>tbody>tr:nth-child(even)>td:nth-child(odd){
+            background-color: black;
+        }
+
+        h3::before{
+            content: "+ ";
+        }
+        h3::after{
+            content:" *";
+        }
+        p::first-letter{
+            font-weight: 900;
+            font-size: 30px;
+            color: orange;
+        }
+
+        p::first-line{
+            color: green;
+        }
+        p::selection{
+            background-color: orange;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h3>Heading 3</h3>
+    <h3>Heading 3</h3>
+    <h3>Heading 3</h3>
+    <p>Proident minim nulla non deserunt sit sint mollit et occaecat irure aute. Laboris ullamco deserunt aliquip tempor. Deserunt sint sit commodo nisi. Minim consectetur tempor ex amet velit ex Lorem. Proident minim nulla non deserunt sit sint mollit et occaecat irure aute. Laboris ullamco deserunt aliquip tempor. Deserunt sint sit commodo nisi. Minim consectetur tempor ex amet velit ex Lorem. Proident minim nulla non deserunt sit sint mollit et occaecat irure aute. Laboris ullamco deserunt aliquip tempor. Deserunt sint sit commodo nisi. Minim consectetur tempor ex amet velit ex Lorem.</p>
+    <p>Proident minim nulla non deserunt sit sint mollit et occaecat irure aute. Laboris ullamco deserunt aliquip tempor. Deserunt sint sit commodo nisi. Minim consectetur tempor ex amet velit ex Lorem. Proident minim nulla non deserunt sit sint mollit et occaecat irure aute. Laboris ullamco deserunt aliquip tempor. Deserunt sint sit commodo nisi. Minim consectetur tempor ex amet velit ex Lorem. Proident minim nulla non deserunt sit sint mollit et occaecat irure aute. Laboris ullamco deserunt aliquip tempor. Deserunt sint sit commodo nisi. Minim consectetur tempor ex amet velit ex Lorem.</p>
+    <!-- <table>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table> -->
+</body>
+</html>
