@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop</title>
+</head>
+
+<body>
+
+    <script>
+        // let number = 0;
+        // do{
+        //     number = Number(prompt('Enter value:'));
+        // }
+        // while(!Number.isInteger(number) || number < 0)
+
+        // let number = Number(prompt('Enter value:'));        
+        // while(!Number.isInteger(number) || number < 0){
+        //     number = Number(prompt('Enter value:'));
+        // }
+
+        let number = Number(prompt('Enter value:'));
+        for (; !Number.isInteger(number) || number < 0;) {
+            number = Number(prompt('Enter value:'));
+        }
+
+        for (let i = 1; i < number; i++) {
+            document.write(`${i} `);
+        }
+        // for(let i = 1; i <= 10; i++){
+        //     document.write(`<button onclick='alert(${i})'>Button ${i}</button>`);
+        // }
+    </script>
+</body>
+
+</html>
