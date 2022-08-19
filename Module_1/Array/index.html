@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+    <script>
+        // let size = 10;
+        // let min = 20, max = 30;
+        // let numbers = new Array(size);
+        // for(let i = 0; i < size; i++){
+        //     numbers[i] = Math.floor(Math.random()*(max - min + 1) + min);
+        // }
+        // document.write(numbers);
+        // let findNumber = Number(prompt('Enter find value: '));
+        // let found = false;
+        // for(let i = 0; i < size; i++){
+        //     if(findNumber == numbers[i]){
+        //         found = true;
+        //         break;
+        //     }
+        // }
+        // document.write(`<br> ${findNumber} ${found ? 'có ' : 'không có'} xuất hiện trong mảng trên.`);
+        // if(found){
+        //     document.write(`<br> ${findNumber} có xuất hiện trong mảng trên.`);
+        // }
+        // else{
+        //     document.write(`<br> ${findNumber} không có xuất hiện trong mảng trên.`);
+        // }
+
+
+        let size = 10;
+        let min = 40, max = 50;
+        let uniqueNumbers = new Array(size);
+        let number = 0;
+        let isExist = false;
+        for (let i = 0; i < size; i++) {
+            do {
+                number = Math.floor(Math.random() * (max - min + 1) + min);
+                isExist = false;
+                for (let j = 0; j < uniqueNumbers.length; j++) {
+                    if (uniqueNumbers[j] == number) {
+                        isExist = true;
+                        break;
+                    }
+                }
+            }
+            while(isExist);
+            uniqueNumbers[i] = number;
+        }
+        document.write(uniqueNumbers);
+    </script>
+</body>
+
+</html>
