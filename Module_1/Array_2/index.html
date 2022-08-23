@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Tên Sản Phẩm</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <script>
+        // let numbers = [2, 1, 11, 4, 3, 21];
+        // [<button>2</button>, <button>1</button>, <button>11</button>, <button>4</button>, <button>3</button>, <button>21</button>]
+        // let htmls = numbers.map(function(value){
+        //     return `<button>${value}</button>`
+        // })
+
+        // document.body.innerHTML = htmls.join("");
+        // for(let number of numbers){
+        //     document.write(`<button>${number}</button>`)
+        // }
+
+        let products = ["iPhone 6S", "iPhone X", "iPhone 7 Plus", "iPhone 8", "iPhone 12 Pro Max"];
+        let htmls = products.map(function (pdt, index) {
+            return `
+                    <tr>
+                        <td>${index + 1}</td>
+                        <td>${pdt}</td>
+                        <td>
+                            <button onclick="remove(${index})">Xóa</button>
+                        </td>
+                    </tr>
+                    `
+        })
+
+        document.querySelector("table>tbody").innerHTML = htmls.join("");
+
+        function remove(index) {
+            products.splice(index, 1);
+            let htmls = products.map(function (pdt, index) {
+                return `
+                    <tr>
+                        <td>${index + 1}</td>
+                        <td>${pdt}</td>
+                        <td>
+                            <button onclick="remove(${index})">Xóa</button>
+                        </td>
+                    </tr>
+                    `
+            })
+
+            document.querySelector("table>tbody").innerHTML = htmls.join("");
+        }
+    </script>
+</body>
+
+</html>
