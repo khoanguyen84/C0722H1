@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"/>
+    <link rel="stylesheet" href="job.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="job-add">
+                <input type="text" class="form-control">
+                <button class="btn btn-primary" onclick="addJob()">Add</button>
+            </div>
+        </div>
+        <div class="row">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>#ID</th>
+                        <th>Job name 
+                            <span class="sort" title="Descending" onclick="descending()">&#9660;</span>
+                            <span class="sort" title="Ascending" onclick="ascending()">&#9650;</span> </th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="job.js"></script>
+    <!-- <script>
+        let jobs = ["Lau nhà", "Rửa chén", "Nấu cơm", "Đón con", "Gặt áo quần"];
+        // ["<button>Lau nhà</button>", "<button>Rửa chén</button>", "<button>Nấu cơm</button>", "<button>Đón con</button>", "<button>Gặt áo quần</button>"]
+        // let htmls = [];
+        // for(let j = 0; j < jobs.length; j++){
+        //     htmls.push(`<button>${jobs[j]}</button>`);
+        // }
+
+        // let htmls = jobs.map(function(job){
+        //     return `<button>${job}</button>`;
+        // })
+        let htmls = jobs.map(function(job, index){
+            return `<input type='radio' name="jobs"> ${index + 1} - ${job}`;
+        })
+        document.body.innerHTML = htmls.join("");
+    </script> -->
+</body>
+
+</html>
