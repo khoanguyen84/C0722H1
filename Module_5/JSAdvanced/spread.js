@@ -17,7 +17,11 @@
 let luyn = {
     name: "Luyn",
     gender: true,
-    age: 18
+    age: 18,
+    language: {
+        name: "English",
+        level: "B1"
+    }
 }
 
 // let loc = { ...luyn };
@@ -26,7 +30,15 @@ let luyn = {
 let loc = {
     ...luyn,
     name: "Lộc",
-    email: "luna-dao@gmail.com"
+    email: "luna-dao@gmail.com",
+    language: {
+        ...luyn.language
+    }
 }
+
+// let loc_2 = JSON.parse(JSON.stringify(luyn))
+// loc_2.language.level = "B2"
+loc.language.level = "B2"
 console.log(luyn);
 console.log(loc);
+// console.log(loc_2);
