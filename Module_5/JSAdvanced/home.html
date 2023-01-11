@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="password" id="password" oninput="inputPassword()"> -->
+    <!-- <input type="password" oninput="inputPassword(event)"> -->
+    <!-- <input type="password" id="password"> -->
+    Email: <input type="email" name="email" oninput="enterValue(event)">
+    <br>
+    Password:<input type="password" name="password" oninput="enterValue(event)">
+    <br>
+    Mobile:<input type="tel" name="mobile" oninput="enterValue(event)">
+    <br>
+    Age:<input type="number" name="age" oninput="enterValue(event)">
+    <br>
+    <button onclick="signin()">Login</button>
+    <script src="target.js"></script>
+    <script>
+        // function inputPassword(){
+        //     console.log(document.querySelector('#password').value);
+        // }
+        // function inputPassword(e){
+        //     console.log(e.target.value);
+        // }
+
+        // document.querySelector('#password').oninput = function(e){
+        //     console.log(e.target.value);
+        // }
+
+        // document.querySelector('#password').addEventListener("input", function(e){
+        //     console.log(e.target.value);
+        // })
+        let login = {}
+        function enterValue(e){
+            login = {
+                ...login,
+                [e.target.name]: e.target.value
+            }
+
+            console.log(login);
+        }
+
+        function signin(){
+            // callAPI
+            console.log(login);
+        }
+    </script>
+</body>
+</html>
