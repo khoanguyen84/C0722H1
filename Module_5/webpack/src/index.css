@@ -1,0 +1,18 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+.container{
+    max-width: 900px;
+    margin: 0px auto;
+}
+
+.display-5{
+    font-size: 20px;
+}
+.display-3{
+    font-size: 12px;
+}
+
+.bg-warning{
+    background-color: yellow;
+}
