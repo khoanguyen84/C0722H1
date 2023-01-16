@@ -1,10 +1,10 @@
 import React from "react";
-import TwoWayBinding2 from './../UseState/TwoWayBinding2';
+import Menu from './../UseState/Menu';
 
 function Main() {
     return (
         <div className="container">
-            <TwoWayBinding2/>
+            <Menu/>
         </div>
     )
 }
