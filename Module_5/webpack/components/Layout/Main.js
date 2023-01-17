@@ -1,10 +1,10 @@
 import React from "react";
-import Menu from './../UseState/Menu';
+import ToDoList2 from './../UseState/ToDoList2';
 
 function Main() {
     return (
         <div className="container">
-            <Menu/>
+            <ToDoList2/>
         </div>
     )
 }
