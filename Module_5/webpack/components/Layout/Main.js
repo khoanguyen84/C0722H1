@@ -1,10 +1,10 @@
 import React from "react";
-import ToDoList2 from './../UseState/ToDoList2';
+import UseEffect from './../UseEffect/UseEffect';
 
 function Main() {
     return (
         <div className="container">
-            <ToDoList2/>
+            <UseEffect/>
         </div>
     )
 }
